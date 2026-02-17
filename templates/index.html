@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharma Nyaya - Ethical Case Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕉️ Dharma Nyaya</h1>
+            <p class="subtitle">Traditional Wisdom for Modern Disputes</p>
+        </header>
+        
+        <main>
+            <div class="query-section">
+                <form action="/analyze" method="POST">
+                    <label for="plaintiff"><strong>Plaintiff Statement:</strong></label>
+                    <textarea id="plaintiff" name="plaintiff" rows="5" placeholder="Enter the plaintiff's perspective..." required></textarea>
+
+                    <label for="defendant"><strong>Defendant Statement:</strong></label>
+                    <textarea id="defendant" name="defendant" rows="5" placeholder="Enter the defendant's perspective..." required></textarea>
+
+                    <label for="facts"><strong>Facts of the Case:</strong></label>
+                    <textarea id="facts" name="facts" rows="5" placeholder="Enter the objective facts of the dispute..." required></textarea>
+
+                    <button type="submit">Analyze Case</button>
+                </form>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 20px; background: #e8f4f8; border-radius: 8px; border-left: 4px solid #2196F3;">
+                <h3 style="margin-top: 0; color: #1976D2;">ℹ️ About This Tool</h3>
+                <p style="line-height: 1.6; color: #333;">
+                    This tool provides ethical analysis based on ancient Indian philosophical traditions including:
+                    <strong>Bhagavad Gita, Chanakya Neeti, Arthashastra,</strong> and <strong>Manusmriti</strong>.
+                    The analysis focuses on dharmic principles, karma, and ethical considerations rather than modern legal rulings.
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
