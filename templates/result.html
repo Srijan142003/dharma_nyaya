@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result - Dharma Nyaya</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dharma Nyaya</h1>
+            <p class="subtitle">Analysis Result</p>
+        </header>
+        
+        <main>
+            <div class="result-section">
+                <h2>Dharmic Analysis</h2>
+                <div class="result-content">
+                    <pre style="white-space: pre-wrap; font-family: 'Segoe UI', sans-serif; line-height: 1.8; margin: 0;">{{ verdict }}</pre>
+                </div>
+                
+                <div style="margin-top: 20px; padding: 15px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px;">
+                    <p style="margin: 0; color: #856404;">
+                        <strong>Disclaimer:</strong> This analysis is based on philosophical interpretation of Hindu scriptures and ethical principles. It does not constitute legal advice.
+                    </p>
+                </div>
+                
+                <div class="actions">
+                    <a href="/" class="btn">New Analysis</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
